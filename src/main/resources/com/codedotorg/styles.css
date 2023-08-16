@@ -1,0 +1,55 @@
+/* Default root styling */
+.root {
+    -fx-font-family: "Lucida Grande";
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 20px;
+}
+
+/* Style for the main title of the app */
+#titleLabel {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #247BA0;
+    -fx-alignment: center;
+}
+
+/* Style for the conversation text area */
+.text-area {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #247BA0;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-pref-width: 400px;
+    -fx-pref-height: 250px;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-prompt-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+}
+
+.text-area .content {
+    -fx-background-color: #FFFFFF;
+}
+
+/* Style for the input label */
+.label {
+    -fx-text-fill: #000;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Style for the input field */
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #247BA0;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-pref-width: 200px;
+    -fx-font-size: 16px;
+}
+
+/* Styling for the VBox and HBox */
+.vbox, .hbox {
+    -fx-spacing: 15px;
+    -fx-background-color: #70C1B3;
+}
