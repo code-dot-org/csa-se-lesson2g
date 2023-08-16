@@ -144,14 +144,35 @@ public class HonestHeadlines {
         TextField tempField = new TextField();
 
         tempField.setOnAction(event -> {
-            String input = tempField.getText();
-            results.appendText("Headline: " + input + "\n");
-            String classification = classifyHeadline(input);
-            results.appendText("Classification: " + classification + "\n");
+            String userInput = tempField.getText();
+            
+            updateUserResponse(userInput);
+            updateClassificationResult(userInput);
+            
             tempField.clear();
         });
 
         return tempField;
+    }
+
+    /**
+     * Updates the user response with the given input.
+     * 
+     * @param userInput the input provided by the user
+     */
+    public void updateUserResponse(String userInput) {
+        results.appendText("Headline: " + userInput + "\n");
+    }
+
+    /**
+     * Updates the classification result of the given user input by calling
+     * the classifyHeadline method and appending the result to the results text area.
+     * 
+     * @param userInput the user input to classify
+     */
+    public void updateClassificationResult(String userInput) {
+        String classification = classifyHeadline(userInput);
+        results.appendText("Classification: " + classification + "\n");
     }
 
 }
